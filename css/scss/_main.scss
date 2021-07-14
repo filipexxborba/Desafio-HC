@@ -1,0 +1,24 @@
+main{
+    text-align: center;
+    color: white;
+    margin-bottom: rem(64);
+    h1{
+        font-size: em(144);
+        line-height: rem(40);
+        @media (max-width: rem(880)){
+           font-size: em(64);
+        }
+    }
+    
+    h2{
+        font-size: em(96);
+        text-transform: uppercase;
+        letter-spacing: rem(10);
+        background: -webkit-linear-gradient($main-color, rgba($main-color, .2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: rem(880)){
+            font-size: em(48);
+         }
+    }
+}

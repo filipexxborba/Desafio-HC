@@ -1,0 +1,20 @@
+header{
+    padding: rem(32) 0;
+    margin-bottom: rem(64);
+    .logo{
+        display: flex;
+        align-items: center;
+        span{
+            width: rem(48);
+            height: rem(48);
+            display: block;
+            background: linear-gradient(180deg, #FF5454 0%, rgba(255, 0, 0, 0) 100%, rgba(255, 84, 84, 0) 100%);
+            border-radius: 50%;
+        }
+        h1{
+            color: $white;
+            margin-left: rem(16);
+        }
+    }
+    
+}

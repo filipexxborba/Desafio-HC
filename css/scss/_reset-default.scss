@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+// Cores
+$background-main-color: #282930;
+$white: #fff;
+$main-color: #FF5454;
+$main-dark-color: #C03C3C;
+$secondary-color: #393B47;
+
+// Functions
+
+@function rem($size, $context:16){
+    @return $size / $context + rem;
+}
+
+@function em($size, $context:16){
+    @return $size / $context + em;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(180deg, $background-main-color, #0A0A0D);
+}
+
+.container{
+    max-width: rem(1200);
+    margin: 0 auto;
+    padding: 0 rem(32)
+}
+
+.animate{
+    transform: translateY(rem(0)) !important;
+    opacity: 1 !important;
+}
